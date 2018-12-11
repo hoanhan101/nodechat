@@ -29,7 +29,7 @@ io.sockets.on('connection', function(socket) {
     // Send message.
     socket.on('send message', function(data) {
         counter += 1;
-	io.sockets.emit('new message', {msgID: counter, msg: data, color: map[socket.id]});
+        io.sockets.emit('new message', {msgID: counter, msg: data, color: map[socket.id]});
     });
 });
 
